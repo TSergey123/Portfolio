@@ -1,0 +1,126 @@
+.container {
+ margin: 0 auto;
+ width: 280px;
+}
+
+@media (min-width: 768px) {
+ .container {
+  width: 708px;
+ }
+}
+
+@media (min-width: 1440px) {
+ .container {
+  width: 1220px;
+ }
+}
+
+h1,
+h2,
+p,
+li {
+ color: white;
+ font-size: 20px;
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.body {
+ background-color: #1a1b21;
+}
+
+.header-welcoming {
+  text-align: center;
+}
+
+.main__title {
+  text-align: center;
+  font-size: 25px;
+}
+.experience,
+.projects,
+.skills {
+  margin-top: 10px;
+}
+
+.project__title-link {
+  text-decoration: none;
+}
+
+.slider {
+ display: flex;
+ flex-direction: row;
+ width: 100%;
+ overflow-x: hidden;
+ position: relative;
+}
+
+.slider__list {
+ position: relative;
+ left: 0;
+ display: flex;
+ justify-content: flex-start;
+ align-items: flex-start;
+ width: 100%;
+ margin: 0;
+ list-style: none;
+ transition: transform 1.6s ease;
+}
+
+.slider__item {
+ text-align: center;
+ flex: 0 0 50%;
+ transform: translateZ(0);
+ transition: transform 1.6s ease;
+ justify-content: center;
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+}
+
+
+.slider__button {
+  z-index: 10;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  top: 40px;
+
+}
+
+.slider__button--left {
+  left: 0;
+}
+
+.slider__button--right {
+  right: 0;
+}
+
+.slider__image {
+  max-width: 300px;
+  max-height: 100px;
+}
+
+.slider__text {
+  /* width: 350px; */
+}
+
+.footer__social {
+  text-align: center;
+}
+
+.footer__social-link {
+  cursor: pointer;
+}
+
+.footer__social-image {
+  width: 120px;
+  height: 120px;
+}
