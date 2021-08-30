@@ -1,18 +1,6 @@
 .container {
- margin: 0 auto;
- width: 280px;
-}
-
-@media (min-width: 768px) {
- .container {
-  width: 708px;
- }
-}
-
-@media (min-width: 1440px) {
- .container {
-  width: 1220px;
- }
+  margin: 0 auto;
+  width: 1020px;
 }
 
 h1,
