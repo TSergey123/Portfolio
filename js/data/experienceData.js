@@ -1,4 +1,5 @@
 export const experienceData = [
+  { jobTitle: 'Рсхб-интех', jobPosition: 'Младший Front-end разработчик', jobTerm: 'август 2021 - по настоящее время', jobImage: 'rshb.png' },
   { jobTitle: 'Рсхб-интех', jobPosition: 'Руководитель направления автоматизации', jobTerm: 'октябрь 2019 - по настоящее время', jobImage: 'rshb.png' },
   { jobTitle: 'Технопрогресс', jobPosition: 'Старший инженер по автоматизации', jobTerm: 'апрель 2017 - октябрь 2019', jobImage: 'technoprogress.png' },
   { jobTitle: 'Тинькофф страхование', jobPosition: 'Инженер по тестированию', jobTerm: 'февраль 2017 - апрель 2017', jobImage: 'tinkoff.png' },
