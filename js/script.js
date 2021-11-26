@@ -1,9 +1,11 @@
 import { createExperienceData, experienceData } from './data/experienceData.js';
 import { createProjectsData, projectsData } from './data/projectsData.js';
-import { createSkillData, skillData } from './data/skillData.js';
+import { createInterviewData, interviewData } from './data/interviewData.js';
+// import { createSkillData, skillData } from './data/skillData.js';
 import { createExperienceItem } from './modules/experienceView.js';
 import { createProjectItem } from './modules/projectsView.js';
-import { createSkillItem } from './modules/skillView.js';
+import { createInterviewItem } from './modules/interviewView.js';
+// import { createSkillItem } from './modules/skillView.js';
 import { moveLeft, moveRight } from './utils/moveSlider.js';
 import { render } from './utils/render.js';
 
@@ -17,10 +19,16 @@ for (let i = 0; i < projectsData.length; i++) {
  render(projectList, createProjectItem(createProjectsData(i)));
 };
 
-const skillList = document.querySelector('.skills__list');
-for (let i = 0; i < skillData.length; i++) {
- render(skillList, createSkillItem(createSkillData(i)));
+const interviewList = document.querySelector('.interviews__list');
+for (let i = 0; i < interviewData.length; i++) {
+ render(interviewList, createInterviewItem(createInterviewData(i)));
 };
+
+
+// const skillList = document.querySelector('.skills__list');
+// for (let i = 0; i < skillData.length; i++) {
+//  render(skillList, createSkillItem(createSkillData(i)));
+// };
 
 //experience Slider
 const experienceRightButton = document.querySelector('.experience__slider-button--right');
@@ -53,18 +61,36 @@ projectLeftButton.addEventListener("click", function () {
   moveLeft(allProjectItemsWidth, projectItem, projectList);
 });
 
+
+// interview Slider
+const interviewRightButton = document.querySelector('.interview__slider-button--right');
+const interviewLeftButton = document.querySelector('.interview__slider-button--left');
+const interviewItem = document.querySelector('.interview__item');
+const interviewItemsLength = document.querySelectorAll('.interviews__item').length;
+const allInterviewItemsWidth = interviewItem.offsetWidth * interviewItemsLength - interviewItem.offsetWidth;
+
+interviewRightButton.addEventListener("click", function () {
+  moveRight(allInterviewItemsWidth, interviewItem, interviewList);
+});
+
+interviewLeftButton.addEventListener("click", function () {
+  moveLeft(allInterviewItemsWidth, interviewItem, interviewList);
+});
+
+
+
 // skill Slider
-const skillRightButton = document.querySelector('.skill__slider-button--right');
-const skillLeftButton = document.querySelector('.skill__slider-button--left');
-const skillItem = document.querySelector('.skills__item');
-const skillItemsLength = document.querySelectorAll('.skills__item').length;
-const allskillItemsWidth = skillItem.offsetWidth * skillItemsLength - skillItem.offsetWidth;
+// const skillRightButton = document.querySelector('.skill__slider-button--right');
+// const skillLeftButton = document.querySelector('.skill__slider-button--left');
+// const skillItem = document.querySelector('.skills__item');
+// const skillItemsLength = document.querySelectorAll('.skills__item').length;
+// const allskillItemsWidth = skillItem.offsetWidth * skillItemsLength - skillItem.offsetWidth;
 
-skillRightButton.addEventListener("click", function () {
-  moveRight(allskillItemsWidth, skillItem, skillList);
-});
+// skillRightButton.addEventListener("click", function () {
+//   moveRight(allskillItemsWidth, skillItem, skillList);
+// });
 
-skillLeftButton.addEventListener("click", function () {
-  moveLeft(allskillItemsWidth, skillItem, skillList);
-});
+// skillLeftButton.addEventListener("click", function () {
+//   moveLeft(allskillItemsWidth, skillItem, skillList);
+// });
 
