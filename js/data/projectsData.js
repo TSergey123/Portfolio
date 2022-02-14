@@ -1,9 +1,46 @@
 export const projectsData = [
-  { projectLink: 'https://tsergey123.github.io/what-to-watch/index.html', projectImage: 'react.png', projectTitle: 'Что посмотреть', projectText: 'Hooks, propTypes. Проект не закончен' },
-  { projectLink: 'https://tsergey123.github.io/cinemaddict/', projectImage: 'js.png', projectTitle: 'Онлайн Кинотеатр', projectText: 'MVP, ООП' },
-  { projectLink: 'https://tsergey123.github.io/Keksobooking/build/index.html', projectImage: 'js.png', projectTitle: 'КексоБукинг', projectText: 'API, DRY' },
-  { projectLink: 'https://tsergey123.github.io/calorie-counter/', projectImage: 'js.png', projectTitle: 'Калькулятор калорий', projectText: 'Check it on github ;)' },
-  { projectLink: 'https://tsergey123.github.io/infinity-carousel/', projectImage: 'js.png', projectTitle: 'Бесконечный слайдер', projectText: 'слайдер выполнен на чистом JS' },
+  {
+    projectLink: 'https://tsergey123.github.io/vue-popup/',
+    projectImage: 'vue.png',
+    projectTitle: 'Интернет магазин',
+    projectText: ''
+  },
+  {
+    projectLink: 'https://tsergey123.github.io/vue-playground/',
+    projectImage: 'vue.png',
+    projectTitle: 'Список постов',
+    projectText: ''
+  },
+  {
+    projectLink: 'https://tsergey123.github.io/what-to-watch/index.html',
+    projectImage: 'react.png',
+    projectTitle: 'Что посмотреть',
+    projectText: 'Hooks, propTypes. Проект не закончен'
+  },
+  {
+    projectLink: 'https://tsergey123.github.io/cinemaddict/',
+    projectImage: 'js.png',
+    projectTitle: 'Онлайн Кинотеатр',
+    projectText: 'MVP, ООП'
+  },
+  {
+    projectLink: 'https://tsergey123.github.io/Keksobooking/build/index.html',
+    projectImage: 'js.png',
+    projectTitle: 'КексоБукинг',
+    projectText: 'API, DRY'
+  },
+  {
+    projectLink: 'https://tsergey123.github.io/calorie-counter/',
+    projectImage: 'js.png',
+    projectTitle: 'Калькулятор калорий',
+    projectText: 'Check it on github ;)'
+  },
+  {
+    projectLink: 'https://tsergey123.github.io/infinity-carousel/',
+    projectImage: 'js.png',
+    projectTitle: 'Бесконечный слайдер',
+    projectText: 'слайдер выполнен на чистом JS'
+  },
 ];
 
 export const createProjectsData = (i) => {
